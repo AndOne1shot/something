@@ -1,0 +1,61 @@
+package something;
+
+
+import java.util.Scanner;
+
+public class baseballgame {
+
+	public static void main(String[] args) {
+		System.out.println("야구게임");
+		Scanner sc = new Scanner(System.in);
+		String[] baseball = new String[3];
+		
+		for (int i = 0; i < baseball.length; i++) {
+			baseball[i] =  String.valueOf((int)(Math.random() * 9));
+	
+			for (int j = 0; j < i; j++) {
+				if (baseball[i].equals(baseball[j])) {
+					i--;
+					break;
+				}
+			}
+		} 
+
+		String a = baseball[0];
+		String b = baseball[1];
+		String c = baseball[2];
+		int p =0;
+	
+		String answer = a+b+c;
+		
+		while(true) {
+			System.out.println("3자리 숫자를 입력하세요");
+			String inputnum = sc.nextLine();
+			int strike = 0;
+			int ball = 0;
+			if(inputnum.substring(0,1).equals(a)) {
+				strike += 1;
+			}else if(inputnum.substring(0,1).equals(b)||inputnum.substring(0,1).equals(c)){
+				ball += 1;
+			}
+			if(inputnum.substring(1,2).equals(b)) {
+				strike += 1;
+			}else if(inputnum.substring(1,2).equals(a)||inputnum.substring(1,2).equals(c)){
+				ball += 1;
+			}
+			if(inputnum.substring(2,3).equals(c)) {
+				strike += 1;
+			}else if(inputnum.substring(2,3).equals(a)||inputnum.substring(2,3).equals(b)){
+				ball += 1;
+			}
+			p++;
+			System.out.println(strike+"S"+ball+"B 입니다.");
+			
+			if(strike ==3) {
+			System.out.println("정답입니다.  정답 : "+answer);
+			System.out.println("입력 횟수 : "+p);
+		break;}
+		}	
+	}
+}
+
