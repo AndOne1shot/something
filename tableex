@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024_08_13 과제</title>
+</head>
+<body>
+    <table border="1" width="500" height="200" bgcolor="yellow" align="center">
+        <caption>표 연습</caption>
+      <tr align="center">
+        <th rowspan="4" width="20">신청내역</th>
+        <th colspan="2">청소년</th>
+        <th colspan="2">노인</th>
+        <th rowspan="2">비고</th>
+      </tr>
+
+      <tr align="center">
+        <td>남자</td>
+        <td>여자</td>
+        <td>남자</td>
+        <td>여자</td>
+       
+      </tr>
+
+      <tr align="center">
+        <td>10</td>
+        <td>50</td>
+        <td>60</td>
+        <td>80</td>
+        <td rowspan="2"></td>
+      </tr>
+
+      <tr align="center">
+        <td>80</td>
+        <td>60</td>
+        <td>68</td>
+        <td>78</td>
+        
+      </tr>
+
+
+    </table>
+
+    
+</body>
+</html>
