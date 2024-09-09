@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Paytone One' rel='stylesheet'>
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("img").mouseover(function(){
+                $("p").fadeIn(500);
+            }).mouseout(function(){
+                $("p").fadeOut(500);
+            })
+        })
+    </script>
+
+    <style>
+div {
+    border-style: outset;
+    
+    height: 200px;
+    width : 200px;
+    display : inline-block;
+    text-align: center;
+    background: linear-gradient(to bottom, white 50%, skyblue 50%);
+    background-size: 10% 200%;
+    background-position: top;
+    transition: background-position 0.5s; /* 부드러운 전환 효과 추가 */
+    
+}
+
+p {
+    font-family: 'Paytone One';
+    color: #3F0099;
+    font-size: 24px;
+    font-weight:600;
+    display: none;
+  
+}
+
+img{
+    margin-top: 25px;
+   
+    height : 125px;
+    width : 125px;
+}
+
+div:hover {
+    background-position: bottom;
+   
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="image/mancity.png">
+        <p style="margin-top: 5px;">Manchester City</p>
+    </div>
+</body>
+</html>
