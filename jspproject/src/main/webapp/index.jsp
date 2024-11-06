@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	jsp project
+	jsp project 1
 </body>
 </html>
