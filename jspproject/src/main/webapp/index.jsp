@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	jsp project 1 수정1
 	jsp project 1
 </body>
 </html>
